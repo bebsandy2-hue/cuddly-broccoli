@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BV Style Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+.header{
+    background:linear-gradient(45deg,#2563eb,#06b6d4);
+    padding:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+.balance{
+    margin-top:20px;
+    background:rgba(255,255,255,0.1);
+    padding:15px;
+    border-radius:15px;
+}
+
+.balance h2{
+    margin-top:5px;
+    font-size:28px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card h3{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.btn{
+    display:block;
+    width:90%;
+    margin:20px auto;
+    text-align:center;
+    background:#2563eb;
+    padding:15px;
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#1e293b;
+    display:flex;
+    justify-content:space-around;
+    padding:15px 0;
+}
+
+.bottom-nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="profile">
+        <img src="https://i.imgur.com/2DhmtJ4.jpg">
+        <div>
+            <h2>Samir Chaudhary</h2>
+            <p>ID: BV10234</p>
+        </div>
+    </div>
+
+    <div class="balance">
+        <p>Total Balance</p>
+        <h2>$2,540</h2>
+    </div>
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <h1>💰</h1>
+        <h3>Recharge</h3>
+    </div>
+
+    <div class="card">
+        <h1>🏧</h1>
+        <h3>Withdraw</h3>
+    </div>
+
+    <div class="card">
+        <h1>👥</h1>
+        <h3>Team</h3>
+    </div>
+
+    <div class="card">
+        <h1>🎁</h1>
+        <h3>Bonus</h3>
+    </div>
+
+</div>
+
+<a href="#" class="btn">Start Earning</a>
+
+<div class="bottom-nav">
+    <a href="#">Home</a>
+    <a href="#">Task</a>
+    <a href="#">Wallet</a>
+    <a href="#">Profile</a>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BV Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    padding-bottom:80px;
+}
+
+.header{
+    background:linear-gradient(45deg,#2563eb,#06b6d4);
+    padding:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+.balance{
+    margin-top:20px;
+    background:rgba(255,255,255,0.1);
+    padding:15px;
+    border-radius:15px;
+}
+
+.balance h2{
+    margin-top:5px;
+    font-size:28px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    padding:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card h1{
+    font-size:35px;
+}
+
+.card h3{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.btn{
+    display:block;
+    width:90%;
+    margin:20px auto;
+    text-align:center;
+    background:#2563eb;
+    padding:15px;
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.notice{
+    margin:20px;
+    background:#1e293b;
+    padding:15px;
+    border-radius:12px;
+}
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#1e293b;
+    display:flex;
+    justify-content:space-around;
+    padding:15px 0;
+}
+
+.bottom-nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="profile">
+        <img src="https://i.imgur.com/2DhmtJ4.jpg">
+        <div>
+            <h2>Samir Chaudhary</h2>
+            <p>ID: BV10234</p>
+        </div>
+    </div>
+
+    <div class="balance">
+        <p>Total Balance</p>
+        <h2>$2,540</h2>
+    </div>
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <h1>💰</h1>
+        <h3>Recharge</h3>
+    </div>
+
+    <div class="card">
+        <h1>🏧</h1>
+        <h3>Withdraw</h3>
+    </div>
+
+    <div class="card">
+        <h1>👥</h1>
+        <h3>Team</h3>
+    </div>
+
+    <div class="card">
+        <h1>🎁</h1>
+        <h3>Bonus</h3>
+    </div>
+
+</div>
+
+<a href="#" class="btn">Start Earning</a>
+
+<div class="notice">
+<h3>Latest Notice</h3>
+<br>
+<p>Welcome to BV Dashboard Website UI.</p>
+</div>
+
+<div class="bottom-nav">
+    <a href="#">Home</a>
+    <a href="#">Task</a>
+    <a href="#">Wallet</a>
+    <a href="#">Profile</a>
+</div>
+
+</body>
+</html>
